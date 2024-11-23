@@ -181,13 +181,14 @@ def leaderboard():
     # Load all users' data
     users = load_users()
     
-    # Get points for each user
+    # Get points for each user from the game_data
     leaderboard_data = []
     for username in users:
         user_data = load_user_data(username)
+        points = user_data.get('game_data', {}).get('points', 0)  # Access points from game_data
         leaderboard_data.append({
             'username': username,
-            'points': user_data['points']
+            'points': points
         })
     
     # Sort leaderboard by points in descending order
