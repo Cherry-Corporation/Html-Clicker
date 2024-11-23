@@ -1,0 +1,144 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+    color: #333;
+}
+
+.info {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #005f73;
+    transform: scale(1.05);
+}
+
+#clicker-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+}
+
+#reset-btn {
+    background-color: #f44336;
+}
+
+#prestige-btn {
+    background-color: #FFD700;
+    color: black;
+    font-weight: bold;
+}
+
+#prestige-btn:hover {
+    background-color: #FFC107;
+}
+
+#dark-mode-toggle {
+    margin-top: 20px;
+    background-color: #555;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #333;
+}
+
+/* Layout Styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.container button {
+    flex: 1 1 200px;
+    max-width: 300px;
+}
+
+#game-container {
+    margin-top: 20px;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+.dark-mode button {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+.dark-mode button:hover {
+    background-color: #444;
+}
+
+#dark-mode-toggle.dark-mode {
+    background-color: #ddd;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+    #clicker-btn {
+        font-size: 22px;
+        padding: 15px 30px;
+    }
+
+    .info {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container button {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 20px 25px;
+    }
+
+    #clicker-btn {
+        font-size: 24px;
+        padding: 20px 30px;
+    }
+}
