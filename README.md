@@ -1,5 +1,6 @@
 # 🎮 Clicker Game 🖱️
 Welcome to the Clicker Game, a simple but addictive web game where you click to earn points, upgrade your clicker, buy auto-clickers, activate boosts, and prestige to level up! 🌟
+Accessible at https://andrecmdrgb.pythonanywhere.com/
 
 ## 🚀 Features:
 - Points per Click 💰: Click the button to earn points and upgrade your clicker for more points.
@@ -10,11 +11,12 @@ Welcome to the Clicker Game, a simple but addictive web game where you click to 
 - Responsive 📱: The game is optimized to work beautifully across all devices, from desktop to mobile!
 
 # 🎮 How to Play:
-1. Click 🖱️: Start by clicking the "Click Me!" button to earn points.
-2. Upgrade ⚙️: Use your points to upgrade your clicker, increasing the number of points per click.
-3. Buy Auto-Clicker 🤖: Spend points to purchase auto-clickers that earn points automatically every second.
-4. Activate Boost ⚡: Double your points for a limited time by activating the boost.
-5. Prestige 🏅: Reach a point milestone and reset your progress to gain prestige levels that increase your points per click.
+1. Open the game with your favorite web browser and follow this link: https://andrecmdrgb.pythonanywhere.com/
+2. Click 🖱️: Start by clicking the "Click Me!" button to earn points.
+3. Upgrade ⚙️: Use your points to upgrade your clicker, increasing the number of points per click.
+4. Buy Auto-Clicker 🤖: Spend points to purchase auto-clickers that earn points automatically every second.
+5. Activate Boost ⚡: Double your points for a limited time by activating the boost.
+6. Prestige 🏅: Reach a point milestone and reset your progress to gain prestige levels that increase your points per click.
 - Dark Mode 🌙: Click the button to toggle between light mode and dark mode to suit your gaming environment!
 
 # 📸 Screenshots:
