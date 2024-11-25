@@ -26,6 +26,10 @@ Welcome to the Clicker Game, a simple but addictive web game where you click to 
 ![{6FBC7F54-8657-4FE0-BE3D-E01A7AB667EA}](https://github.com/user-attachments/assets/f64d6873-fb33-4c3c-b1e5-007fb435a8bf)
 ![{E4DEFDE3-F58E-4988-B8FA-E6D7D742EC10}](https://github.com/user-attachments/assets/f0674137-802a-4eb1-a1b6-a3bd7c455f97)
 
+## Mobile:
+![{5123609C-3AA4-41BB-B028-006EB7376018}](https://github.com/user-attachments/assets/c99f7390-4989-4fb5-9fda-2ea96c38d89d)
+![{403680FD-3960-48A3-90A4-E71CD7DCB21D}](https://github.com/user-attachments/assets/a99d1d56-a121-439d-91eb-6bdd33a65139)
+
 
 # 🔧 Technologies Used:
 ### Frontend:
