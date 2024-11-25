@@ -17,7 +17,7 @@ Welcome to the Clicker Game, a simple but addictive web game where you click to 
 5. Prestige 🏅: Reach a point milestone and reset your progress to gain prestige levels that increase your points per click.
 - Dark Mode 🌙: Click the button to toggle between light mode and dark mode to suit your gaming environment!
 
-## 🔧 Technologies Used:
+# 🔧 Technologies Used:
 ### Frontend:
 
 HTML, CSS, and JavaScript to build the UI.
