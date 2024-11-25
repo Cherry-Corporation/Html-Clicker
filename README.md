@@ -59,7 +59,7 @@ pip install -r requirements.txt
 ```
 python app.py
 ```
-Open your browser and go to http://127.0.0.1:5000 to start playing! 🎮
+Open your browser and go to http://127.0.0.1 to start playing! 🎮
 
 # 🧑‍💻 How to Contribute:
 - Fork this repo 🍴
