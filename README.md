@@ -8,7 +8,15 @@ Welcome to the Clicker Game, a simple but addictive web game where you click to 
 - Prestige 🏅: Reset your game to gain prestige levels, which increase your points per click.
 - Dark Mode 🌙: Switch between light and dark mode to suit your preference. Toggle it anytime during the game!
 - Responsive 📱: The game is optimized to work beautifully across all devices, from desktop to mobile!
-  
+
+# 🎮 How to Play:
+1. Click 🖱️: Start by clicking the "Click Me!" button to earn points.
+2. Upgrade ⚙️: Use your points to upgrade your clicker, increasing the number of points per click.
+3. Buy Auto-Clicker 🤖: Spend points to purchase auto-clickers that earn points automatically every second.
+4. Activate Boost ⚡: Double your points for a limited time by activating the boost.
+5. Prestige 🏅: Reach a point milestone and reset your progress to gain prestige levels that increase your points per click.
+- Dark Mode 🌙: Click the button to toggle between light mode and dark mode to suit your gaming environment!
+
 ## 🔧 Technologies Used:
 ### Frontend:
 
@@ -23,13 +31,6 @@ Python Flask 🐍: Used to manage the game state, save progress, and handle the 
 Game data, including points, upgrades, and preferences, are stored in local storage or a backend server for persistent progress.
 Save and load game functionality allows you to pick up where you left off!
 
-# 🎮 How to Play:
-1. Click 🖱️: Start by clicking the "Click Me!" button to earn points.
-2. Upgrade ⚙️: Use your points to upgrade your clicker, increasing the number of points per click.
-3. Buy Auto-Clicker 🤖: Spend points to purchase auto-clickers that earn points automatically every second.
-4. Activate Boost ⚡: Double your points for a limited time by activating the boost.
-5. Prestige 🏅: Reach a point milestone and reset your progress to gain prestige levels that increase your points per click.
-- Dark Mode 🌙: Click the button to toggle between light mode and dark mode to suit your gaming environment!
 
 ## 🖥️ Setup & Installation for development:
 - Clone this repository:
@@ -66,10 +67,7 @@ git push origin feature-name
 - 💬 Feedback & Suggestions: Feel free to open an issue if you encounter bugs or have suggestions for new features!
 - 🎮 Share your Progress: Share your game progress with your friends and challenge them to beat your score!
 -🚀 Stay Updated: Follow me on GitHub for updates and new features!
-📸 Screenshots:
-Game UI:
 
-Dark Mode:
 
 ## 🤝 Acknowledgements:
 Special thanks to Flask for the lightweight web framework! 🎉
