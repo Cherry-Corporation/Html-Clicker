@@ -30,39 +30,37 @@ Save and load game functionality allows you to pick up where you left off!
 4. Activate Boost ⚡: Double your points for a limited time by activating the boost.
 5. Prestige 🏅: Reach a point milestone and reset your progress to gain prestige levels that increase your points per click.
 - Dark Mode 🌙: Click the button to toggle between light mode and dark mode to suit your gaming environment!
+
 ## 🖥️ Setup & Installation for development:
 - Clone this repository:
-
-bash
-Copy code
+```
 git clone https://github.com/Cherry-Corporation/Html-Clicker.git
+```
 - Install dependencies:
-
-bash
-Copy code
+```
 pip install -r requirements.txt
+```
 - Run the Flask app:
-
-bash
-Copy code
+```
 python app.py
+```
 Open your browser and go to http://127.0.0.1:5000 to start playing! 🎮
 
 ## 🧑‍💻 How to Contribute:
 - Fork this repo 🍴
 - Clone your forked repo to your local machine 🖥️
 - Create a new branch 🌱:
-bash
-Copy code
+```
 git checkout -b feature-name
+```
 - Commit your changes 🚀:
-bash
-Copy code
+```
 git commit -m "Added a new feature"
+```
 - Push to your branch 🔼:
-bash
-Copy code
+```
 git push origin feature-name
+```
 - Open a Pull Request (PR) to the main repository 🔄
 # 👥 Join the Community:
 - 💬 Feedback & Suggestions: Feel free to open an issue if you encounter bugs or have suggestions for new features!
