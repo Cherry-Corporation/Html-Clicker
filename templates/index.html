@@ -9,10 +9,8 @@
     <script>
         // Immediately apply dark mode based on the user's preference (rendered from Flask)
         document.addEventListener('DOMContentLoaded', function() {
-            // Check if dark mode is enabled (passed from the server)
             const darkModeEnabled = "{{ 'true' if user_data.preferences.get('darkMode', False) else 'false' }}" === 'true';
 
-            // Apply dark mode class instantly
             if (darkModeEnabled) {
                 document.body.classList.add("dark-mode");
             }
@@ -28,10 +26,10 @@
         <div class="info">Auto-clicker rate: <span id="auto-clicker-rate">0</span> points/sec</div>
         <div class="info">Prestige Level: <span id="prestige-level">0</span></div>
 
-        <!-- Game buttons for interactions -->
-        <button id="clicker-btn">Click Me!</button>
-        
-        <!-- Upgrade, auto-clicker, boost, prestige, and reset buttons -->
+        <!-- Main click button -->
+        <button id="clicker-btn" title="Click to earn points!">Click Me!</button>
+
+        <!-- Action buttons -->
         <div class="container">
             <button id="upgrade-btn" title="Increase points per click. Cost increases with each upgrade.">
                 Upgrade Clicker (Cost: 10 Points)
@@ -51,7 +49,9 @@
         </div>
 
         <!-- Dark mode toggle -->
-        <button id="dark-mode-toggle">Switch to Dark Mode</button>
+        <div class="settings">
+            <button id="dark-mode-toggle" title="Toggle dark mode for the game.">Switch to Dark Mode</button>
+        </div>
     </div>
 
     <!-- Load the external script -->
