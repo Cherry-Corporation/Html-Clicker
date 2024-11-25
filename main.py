@@ -136,16 +136,31 @@ def load_game():
 @app.route('/leaderboard')
 def leaderboard():
     """Generate the leaderboard."""
+    # Check if the user is logged in
+    dark_mode = False  # Default to light theme
+    if 'username' in session:
+        # If logged in, load the user's preferences
+        username = session['username']
+        user_data = load_user_data(username)
+        dark_mode = user_data.get('preferences', {}).get('darkMode', False)  # Read dark mode preference
+
+    # Load all users' data
     users = load_users()
     leaderboard_data = [
         {
             'username': username,
-            'points': load_user_data(username).get('game_data', {}).get('points', 0)
+            'points': load_user_data(username).get('game_data', {}).get('points', 0),
+            'prestigeLevel': load_user_data(username).get('game_data', {}).get('prestigeLevel', 0),
+            'autoClickerRate': load_user_data(username).get('game_data', {}).get('autoClickerRate', 0),
         }
         for username in users
     ]
     leaderboard_data.sort(key=lambda x: x['points'], reverse=True)
-    return render_template('leaderboard.html', leaderboard_data=leaderboard_data)
+    
+    # Pass the leaderboard data and dark mode preference to the template
+    return render_template('leaderboard.html', leaderboard_data=leaderboard_data, dark_mode=dark_mode)
+
+
 
 
 # Run the app

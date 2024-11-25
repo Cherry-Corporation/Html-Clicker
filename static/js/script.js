@@ -38,11 +38,13 @@ async function loadGame() {
             gameState.game_data = { ...gameState.game_data, ...data.game_data };
             gameState.preferences = { ...gameState.preferences, ...data.preferences };
 
-            // Apply Dark Mode
+            // Apply Dark Mode globally
             if (gameState.preferences.darkMode) {
                 document.body.classList.add('dark-mode');
+                elements.darkModeToggle.textContent = "Switch to Light Mode"; // Update the button text
             } else {
                 document.body.classList.remove('dark-mode');
+                elements.darkModeToggle.textContent = "Switch to Dark Mode"; // Update the button text
             }
 
             updateDisplay();
@@ -76,6 +78,12 @@ async function saveGame() {
 function toggleDarkMode() {
     gameState.preferences.darkMode = !gameState.preferences.darkMode;
     document.body.classList.toggle('dark-mode', gameState.preferences.darkMode);
+    // Update the button text based on the dark mode state
+    if (gameState.preferences.darkMode) {
+        elements.darkModeToggle.textContent = "Switch to Light Mode";
+    } else {
+        elements.darkModeToggle.textContent = "Switch to Dark Mode";
+    }
     saveGame();
 }
 
@@ -180,9 +188,14 @@ function updateDisplay() {
 
     // Update Auto-Clicker Rate Display
     const autoClickerRateDisplay = document.getElementById('auto-clicker-rate');
-    autoClickerRateDisplay.textContent = `Auto-Clicker Rate: ${gameState.game_data.autoClickerRate}`;
+    autoClickerRateDisplay.textContent = gameState.game_data.autoClickerRate;
 
-    elements.upgradeBtn.textContent = `Upgrade Clicker (Cost: ${gameState.game_data.upgradeCost} Points)`;
+    // Update Prestige Level Display
+    const prestigeLevelDisplay = document.getElementById('prestige-level');
+    prestigeLevelDisplay.textContent = gameState.game_data.prestigeLevel;
+
+    // Update Button Texts
+    elements.upgradeBtn.textContent = `Upgrade Clicker (Cost: ${gameState.game_data.upgradeCost} Points)`; 
     elements.autoClickBtn.textContent = `Buy Auto-Clicker (Cost: 50 Points)`;
     elements.boostBtn.textContent = gameState.game_data.boostActive
         ? 'Boost Active!'
