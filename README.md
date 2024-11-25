@@ -20,9 +20,7 @@ Welcome to the Clicker Game, a simple but addictive web game where you click to 
 ## 🔧 Technologies Used:
 ### Frontend:
 
-HTML, CSS, and JavaScript to build a smooth and interactive user experience.
-🍃 Responsive design for seamless gameplay on mobile devices.
-🎨 Beautiful UI with light and dark modes for visual enjoyment.
+HTML, CSS, and JavaScript to build the UI.
 ### Backend:
 
 Python Flask 🐍: Used to manage the game state, save progress, and handle the leaderboard.
@@ -32,7 +30,7 @@ Game data, including points, upgrades, and preferences, are stored in local stor
 Save and load game functionality allows you to pick up where you left off!
 
 
-## 🖥️ Setup & Installation for development:
+# 🖥️ Setup & Installation for development:
 - Clone this repository:
 ```
 git clone https://github.com/Cherry-Corporation/Html-Clicker.git
@@ -47,7 +45,7 @@ python app.py
 ```
 Open your browser and go to http://127.0.0.1:5000 to start playing! 🎮
 
-## 🧑‍💻 How to Contribute:
+# 🧑‍💻 How to Contribute:
 - Fork this repo 🍴
 - Clone your forked repo to your local machine 🖥️
 - Create a new branch 🌱:
@@ -63,6 +61,7 @@ git commit -m "Added a new feature"
 git push origin feature-name
 ```
 - Open a Pull Request (PR) to the main repository 🔄
+
 # 👥 Join the Community:
 - 💬 Feedback & Suggestions: Feel free to open an issue if you encounter bugs or have suggestions for new features!
 - 🎮 Share your Progress: Share your game progress with your friends and challenge them to beat your score!
@@ -72,6 +71,6 @@ git push origin feature-name
 ## 🤝 Acknowledgements:
 Special thanks to Flask for the lightweight web framework! 🎉
 All contributors for their hard work and creativity to make this game a reality! 🏆
-# 🎉 Enjoy the Game! 🎮
+## 🎉 Enjoy the Game! 🎮
 Have fun, click away, and challenge yourself to see how far you can go! 🚀 Keep improving your strategy, and don’t forget to toggle dark mode for those late-night gaming sessions! 🌙
 
