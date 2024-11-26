@@ -22,12 +22,12 @@ Leaderboard accessible at https://andrecmdrgb.pythonanywhere.com/leaderboard
 
 # 📸 Screenshots:
 ## Normal Game UI:
-![{ED033A9C-36CC-45EA-ACF7-DE410FC03A43}](https://github.com/user-attachments/assets/715483a7-949e-4880-a436-05317e3bfb91)
-![{5BC4E7C2-4D99-4D54-8014-7F1143F31DD6}](https://github.com/user-attachments/assets/7476f36b-c8d1-478c-96e7-37ff2bb5357f)
+![{86561DA0-1691-4BF6-991B-9C61BFDC51FE}](https://github.com/user-attachments/assets/d41e7e9e-2217-4efc-bcc6-e91d7a8fd0d6)
+![{78B65124-339A-42A7-8EBA-A6220E406FCC}](https://github.com/user-attachments/assets/c32a697b-cb01-4640-b831-ce32e0cdc8af)
 
 ## Dark Mode:
-![{6FBC7F54-8657-4FE0-BE3D-E01A7AB667EA}](https://github.com/user-attachments/assets/f64d6873-fb33-4c3c-b1e5-007fb435a8bf)
-![{E4DEFDE3-F58E-4988-B8FA-E6D7D742EC10}](https://github.com/user-attachments/assets/f0674137-802a-4eb1-a1b6-a3bd7c455f97)
+![{94D35D60-D30C-47E4-8F45-1A9AF9903606}](https://github.com/user-attachments/assets/2f32de6b-0f6c-49c9-bcfb-a622936228d6)
+![{AA616840-22DA-4E3B-8E28-BAAF6BB0731D}](https://github.com/user-attachments/assets/8a304f45-9e44-411f-9f54-71c2479f0c9f)
 
 ## Mobile:
 | Normal Ui | Dark Mode |
