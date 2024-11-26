@@ -1,7 +1,7 @@
 # 🎮 Clicker Game 🖱️
 Welcome to the Clicker Game, a free, simple but addictive web game where you click to earn points, upgrade your clicker, buy auto-clickers, activate boosts, and prestige to level up! 🌟
 
-Accessible at https://andrecmdrgb.pythonanywhere.com/
+Leaderboard accessible at https://andrecmdrgb.pythonanywhere.com/leaderboard
 
 ## 🚀 Features:
 - Points per Click 💰: Click the button to earn points and upgrade your clicker for more points.
