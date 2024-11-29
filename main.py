@@ -172,7 +172,7 @@ def static_file_manifest():
                 file_manifest.append(f'/static/{relative_path.replace("\\", "/")}')
     return jsonify(file_manifest)
 
-@app.route('/update', methods=['POST'])
+@app.route('/update')
 def update():
     import subprocess
     import requests
