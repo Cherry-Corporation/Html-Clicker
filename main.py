@@ -4,6 +4,7 @@ import hashlib
 import json
 import subprocess
 import requests
+import time
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
@@ -187,7 +188,7 @@ def update():
         debug_info.append("Running install.py...")
         subprocess.run(['python3', 'install.py'], check=True)
         debug_info.append("install.py executed successfully.")
-
+        time.sleep('20')
         # Step 3: Send a POST request to trigger the server reload
         debug_info.append("Triggering server reload...")
         reload_url = 'https://www.pythonanywhere.com/user/AndreCmdRgb/webapps/AndreCmdRgb.pythonanywhere.com/reload'
