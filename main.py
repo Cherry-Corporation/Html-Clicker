@@ -180,28 +180,7 @@ def static_file_manifest():
 def update():
     debug_info = []  # List to capture debug information
     try:
-        # Step 1: Change directory to the parent folder
-        os.chdir('..')
-        debug_info.append("Changed directory to parent folder.")
-
-        # Step 2: Run the install.py script
-        debug_info.append("Running install.py...")
         
-        result = subprocess.run(
-            ['python3', 'install.py'],
-            check=True,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True
-        )
-
-        # Capture output and error streams
-        debug_info.append(f"install.py stdout: {result.stdout}")
-        debug_info.append(f"install.py stderr: {result.stderr}")
-
-        debug_info.append("install.py executed successfully.")
-        time.sleep('3')
-        # Step 3: Send a POST request to trigger the server reload
         debug_info.append("Triggering server reload...")
         reload_url = 'https://www.pythonanywhere.com/user/AndreCmdRgb/webapps/AndreCmdRgb.pythonanywhere.com/reload'
         response = requests.post(reload_url)
@@ -213,11 +192,6 @@ def update():
         else:
             debug_info.append(f"Failed to reload the server. Status code: {response.status_code}")
             return jsonify(message="Failed to reload the server.", debug=debug_info), response.status_code
-
-    except subprocess.CalledProcessError as e:
-        # Handle errors when running the install.py script
-        debug_info.append(f"Error running install.py: {e}")
-        return jsonify(message="Error occurred while running install.py.", debug=debug_info, error=str(e)), 500
 
     except requests.exceptions.RequestException as e:
         # Handle errors when sending the POST request to reload the server
