@@ -168,6 +168,7 @@ def static_file_manifest():
         for root, _, files in os.walk(folder_path):
             for file in files:
                 relative_path = os.path.relpath(os.path.join(root, file), app.static_folder)
+                # Corrected line: Use f-string for string interpolation
                 file_manifest.append(f'/static/{relative_path.replace("\\", "/")}')
     return jsonify(file_manifest)
 
