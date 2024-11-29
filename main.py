@@ -171,7 +171,43 @@ def static_file_manifest():
                 file_manifest.append(f'/static/{relative_path.replace("\\", "/")}')
     return jsonify(file_manifest)
 
+@app.route('/update', methods=['POST'])
+def update():
+    import subprocess
+    import requests
+    try:
+        # Change directory to the parent folder
+        os.chdir('..')
+        
+        # Run the install.py script
+        print("Running install.py...")
+        subprocess.run(['python3', 'install.py'], check=True)
+        print("install.py executed successfully.")
 
+        # Send a POST request to reload the web server
+        print("Triggering server reload...")
+         # Trigger the server reload via a POST request
+        reload_url = 'https://www.pythonanywhere.com/user/AndreCmdRgb/webapps/AndreCmdRgb.pythonanywhere.com/reload'
+        response = requests.post(reload_url)
+        if response.status_code == 200:
+            print("Server reload successful.")
+        else:
+            print(f"Failed to reload the server. Status code: {response.status_code}")
+
+        return "Update and server reload successful."
+
+
+    except subprocess.CalledProcessError as e:
+        print(f"Error running install.py: {e}")
+        return "Error occurred while running install.py."
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error sending POST request: {e}")
+        return "Error occurred while triggering the server reload."
+
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+        return "An unexpected error occurred."
 # Run the app
 if __name__ == '__main__':
     app.run(port=80)
