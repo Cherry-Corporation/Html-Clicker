@@ -186,9 +186,21 @@ def update():
 
         # Step 2: Run the install.py script
         debug_info.append("Running install.py...")
-        subprocess.run(['python3', 'install.py'], check=True)
+        
+        result = subprocess.run(
+            ['python3', 'install.py'],
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
+        )
+
+        # Capture output and error streams
+        debug_info.append(f"install.py stdout: {result.stdout}")
+        debug_info.append(f"install.py stderr: {result.stderr}")
+
         debug_info.append("install.py executed successfully.")
-        time.sleep('20')
+        time.sleep('3')
         # Step 3: Send a POST request to trigger the server reload
         debug_info.append("Triggering server reload...")
         reload_url = 'https://www.pythonanywhere.com/user/AndreCmdRgb/webapps/AndreCmdRgb.pythonanywhere.com/reload'
