@@ -2,9 +2,6 @@ from flask import Flask, render_template, request, redirect, url_for, session, j
 import os
 import hashlib
 import json
-import subprocess
-import requests
-import time
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
@@ -176,32 +173,6 @@ def static_file_manifest():
     return jsonify(file_manifest)
 
 
-@app.route('/update')
-def update():
-    debug_info = []  # List to capture debug information
-    try:
-        
-        debug_info.append("Triggering server reload...")
-        reload_url = 'https://www.pythonanywhere.com/user/AndreCmdRgb/webapps/AndreCmdRgb.pythonanywhere.com/reload'
-        response = requests.post(reload_url)
-
-        # Check the response from the server reload
-        if response.status_code == 200:
-            debug_info.append("Server reload successful.")
-            return jsonify(message="Update and server reload successful.", debug=debug_info), 200
-        else:
-            debug_info.append(f"Failed to reload the server. Status code: {response.status_code}")
-            return jsonify(message="Failed to reload the server.", debug=debug_info), response.status_code
-
-    except requests.exceptions.RequestException as e:
-        # Handle errors when sending the POST request to reload the server
-        debug_info.append(f"Error sending POST request to reload the server: {e}")
-        return jsonify(message="Error occurred while triggering the server reload.", debug=debug_info, error=str(e)), 500
-
-    except Exception as e:
-        # Handle any unexpected errors
-        debug_info.append(f"An unexpected error occurred: {e}")
-        return jsonify(message="An unexpected error occurred.", debug=debug_info, error=str(e)), 500
 # Run the app
 if __name__ == '__main__':
     app.run(port=80)
