@@ -160,7 +160,16 @@ def leaderboard():
     # Pass the leaderboard data and dark mode preference to the template
     return render_template('leaderboard.html', leaderboard_data=leaderboard_data, dark_mode=dark_mode)
 
-
+@app.route('/static-file-manifest')
+def static_file_manifest():
+    file_manifest = []
+    for folder in ['css', 'js']:
+        folder_path = os.path.join(app.static_folder, folder)
+        for root, _, files in os.walk(folder_path):
+            for file in files:
+                relative_path = os.path.relpath(os.path.join(root, file), app.static_folder)
+                file_manifest.append(f'/static/{relative_path.replace("\\", "/")}')
+    return jsonify(file_manifest)
 
 
 # Run the app

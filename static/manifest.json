@@ -1,0 +1,49 @@
+{
+    "name": "Clicker Game",
+    "short_name": "Clicker",
+    "description": "An engaging and fun web-based clicker game!",
+    "start_url": "/?source=pwa",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#f4f4f4",
+    "theme_color": "#3498db",
+    "orientation": "portrait",
+    "categories": ["games", "casual", "entertainment"],
+    "icons": [
+      {
+        "src": "icons/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "icons/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "screenshots/screenshot-1.png",
+        "sizes": "1842x628",
+        "type": "image/png"
+      },
+      {
+        "src": "screenshots/screenshot-2.png",
+        "sizes": "1836x661",
+        "type": "image/png"
+      }
+    ]
+  }
+  
